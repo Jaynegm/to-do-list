@@ -1,0 +1,54 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.todo-container {
+  flex: 1;
+  max-width: 60%;
+  padding: 10px;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: white;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+}
+
+.todo-item button {
+  margin-left: auto;
+}
+
+.chart-container {
+  flex: 1;
+  max-width: 35%;
+  padding: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
