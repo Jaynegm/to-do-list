@@ -10,14 +10,16 @@ const TodoList = ({ tarefas, adicionarTarefa, alternarConclusaoTarefa, excluirTa
   };
 
   return (
-    <div className="todo-list-container">
-      <input 
-        type="text" 
-        value={novaTarefa} 
-        onChange={(e) => setNovaTarefa(e.target.value)} 
-        placeholder="Adicionar tarefa" 
-      />
-      <button onClick={handleAdicionarTarefa}>Adicionar</button>
+    <div className="todo-container">
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+        <input 
+          type="text" 
+          value={novaTarefa} 
+          onChange={(e) => setNovaTarefa(e.target.value)} 
+          placeholder="Adicionar tarefa" 
+        />
+        <button onClick={handleAdicionarTarefa}>Adicionar</button>
+      </div>
       <div className="todo-list">
         {tarefas.map((tarefa, index) => (
           <TodoItem 

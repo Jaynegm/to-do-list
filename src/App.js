@@ -27,8 +27,8 @@ const App = () => {
   return (
     <div className="App">
       <h1>Lista de Tarefas</h1>
-      <div className="container">
-        <div className="todo-list-section">
+      <div className="main-container">
+        <div className="todo-container">
           <TodoList 
             tarefas={tarefas} 
             adicionarTarefa={adicionarTarefa} 
@@ -36,7 +36,7 @@ const App = () => {
             excluirTarefa={excluirTarefa} 
           />
         </div>
-        <div className="grafico-section">
+        <div className="chart-container">
           <Graficos tarefas={tarefas} />
         </div>
       </div>

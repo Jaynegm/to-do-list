@@ -1,17 +1,8 @@
 import React from 'react';
 
-const cores = ['#FFCAB1', '#ecdcb0', '#C1D7AE', '#8CC084'];
-let indiceCor = 0;
-
-const obterCorFixa = () => {
-  const cor = cores[indiceCor];
-  indiceCor = (indiceCor + 1) % cores.length; // Cicla através das cores
-  return cor;
-};
-
 const TodoItem = ({ tarefa, onToggle, onDelete }) => {
   return (
-    <div className={`todo-item ${tarefa.completada ? 'completed' : ''}`} style={{ backgroundColor: obterCorFixa() }}>
+    <div className={`todo-item ${tarefa.completada ? 'completed' : ''}`}>
       <input 
         type="checkbox" 
         checked={tarefa.completada} 
